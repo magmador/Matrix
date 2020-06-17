@@ -3,7 +3,8 @@
 int dimention_read()
 {
 	int N;
-	do {
+	do
+	{
 		printf("enter odd matrix dimension: ");
 		scanf("%d", &N);
 	} while(N % 2);
