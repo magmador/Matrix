@@ -18,7 +18,6 @@ void matrix_curl(int* matrix, int N)
 		switch (dir)
 		{
 		case 0:             //право
-			                  //printf("going right\n");
 			if (*(matrix + i*N + (j + 1)) != 0)
 			{
 				visited = 0;
@@ -32,7 +31,6 @@ void matrix_curl(int* matrix, int N)
 			}
 			break;
 		case 1:             //вниз
-			                  //printf("going down\n");
 			if (*(matrix + (i + 1)*N + j) != 0)
 			{
 				visited = 0;
@@ -46,7 +44,6 @@ void matrix_curl(int* matrix, int N)
 			}
 			break;
 		case 2:             //лево
-			                  //printf("going left\n");
 			if (*(matrix + i*N + (j - 1)) != 0)
 			{
 				visited = 0;
@@ -60,7 +57,6 @@ void matrix_curl(int* matrix, int N)
 			}
 			break;
 		case 3:             //вверх
-			                  //printf("going up\n");
 			if (*(matrix + (i - 1)*N + j) != 0)
 			{
 				visited = 0;
